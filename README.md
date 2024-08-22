@@ -3,6 +3,7 @@
 ### Configuração do ambiente
 
 * *Versão do Python 3.12+ instalada*
+<br>
 
 ### Instalando pyenv via PowerShell 
 ```
@@ -16,14 +17,14 @@ pip install pyenv 3.12.3
 ```
 <br>
 
-### Instalando do pipx
+### Instalando o pipx
 
 ```
 pip install pipx
 ```
 <br>
 
-### Instalando do poetry
+### Instalando o poetry
 
 ```
 pipx install poetry

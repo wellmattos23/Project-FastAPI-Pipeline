@@ -51,7 +51,7 @@ jobs:
       - name: Checkout Ops Repository
         uses: actions/checkout@v3
         with:
-          repository: wmattos/fastapi
+          repository: wellmattos23/Project-FastAPI-Pipeline
           ref: main
 
       - name: Update TAG

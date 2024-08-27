@@ -47,3 +47,16 @@ jobs:
       - name: Trivy Scan
         run: |
           trivy image wmattos/fastapi:latest
+
+      - name: Checkout Ops Repository
+        uses: actions/checkout@v3
+        with:
+          repository: wmattos/fastapi
+          ref: main
+
+      - name: Update TAG
+        run: |
+          sed -i 's|image: .*|image: '"${{ secrets.USER }}/fastapi:latest"'|' deployment.yaml
+          git add deployment.yaml
+          git commit -m "Update Docker image TAG to latest"
+          git push

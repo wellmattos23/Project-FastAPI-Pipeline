@@ -1,4 +1,4 @@
-## Construção de API utilizando FastAPI
+## Ambiente de Desenvolvimento Padronizado para APIs Python (FastAPI + Poetry)
 
 ### Configuração do ambiente
 
